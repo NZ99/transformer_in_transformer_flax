@@ -1,1 +1,3 @@
 .idea/
+venv/
+transformer_in_transformer_flax.egg-info/
