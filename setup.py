@@ -13,7 +13,7 @@ setup(
         'artificial intelligence', 'deep learning', 'transformer',
         'image classification'
     ],
-    install_requires=['einops', 'jaxlib', 'jax', 'flax'],
+    install_requires=['jax', 'jaxlib', 'flax', 'einops>=0.3'],
     classifiers=[
         'Development Status :: 4 - Beta',
         'Intended Audience :: Developers',
