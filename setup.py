@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 setup(
     name='transformer-in-transformer-flax',
     packages=find_packages(),
-    version='0.0.4',
+    version='0.0.1',
     license='MIT',
     description='Transformer in Transformer - Flax',
     author='Niccolò Zanichelli',
