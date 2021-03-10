@@ -1,1 +1,1 @@
-from transformer_in_transformer_flax.tnt import TransformerInTransformer
+from transformer_in_transformer_flax.tnt import TransformerInTransformer, TNTConfig
