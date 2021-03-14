@@ -119,8 +119,7 @@ class TNTBlock(nn.Module):
         #Inner T-Block
         x = nn.LayerNorm(dtype=cfg.dtype)(pixel_embeddings)
         x = nn.SelfAttention(num_heads=cfg.inner_heads,
-                             qkv_features=cfg.inner_heads * cfg.inner_dim_head *
-                             3,
+                             qkv_features=cfg.inner_heads * cfg.inner_dim_head,
                              out_features=cfg.inner_dim,
                              use_bias=False,
                              kernel_init=cfg.kernel_init,
@@ -142,8 +141,7 @@ class TNTBlock(nn.Module):
         #Outer T-Block
         x = nn.LayerNorm(dtype=cfg.dtype)(x)
         x = nn.SelfAttention(num_heads=cfg.outer_heads,
-                             qkv_features=cfg.outer_heads * cfg.outer_dim_head *
-                             3,
+                             qkv_features=cfg.outer_heads * cfg.outer_dim_head,
                              out_features=cfg.outer_dim,
                              use_bias=False,
                              kernel_init=cfg.kernel_init,
